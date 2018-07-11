@@ -1,0 +1,11 @@
+version: '2'
+services:
+  mysql:
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: "go4gizwits" #root用户密码
+      MYSQL_USER: "gizwits"             #自定义用户
+      MYSQL_PASSWORD: "go4gizwits"      #自定义用户密码
+      #MYSQL_DATABASE: "gizwits_data"   #初始化数据库
